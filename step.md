@@ -1,5 +1,5 @@
 1. √调通新闻api
-1. 将apiKey放到Bmob
+1. ×将apiKey放到Bmob（放弃：请求bmob还是需要key，总会有key放到代码中）
 1. √重命名bean的字段名
 1. √美女api
 1. 新闻列表界面
