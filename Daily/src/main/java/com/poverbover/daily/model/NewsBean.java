@@ -2,7 +2,8 @@ package com.poverbover.daily.model;
 
 import com.google.gson.annotations.SerializedName;
 import com.poverbover.daily.AppConfig;
-import com.poverbover.daily.request.NewsRequest;
+import com.poverbover.daily.web.request.NewsRequest;
+import com.poverbover.daily.web.response.NewsResponse;
 
 import java.io.Serializable;
 import java.util.List;
@@ -75,12 +76,12 @@ public class NewsBean implements Serializable {
         request.getNews(AppConfig.API_KEY, "popular", 1)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Action1<NewsResult>() {
+                .subscribe(new Action1<NewsResponse>() {
                     @Override
-                    public void call(NewsResult newsResult) {
-                        if (newsResult.getCode() == 0)
-                            listener.onSuccess(newsResult.getData().getArticle());
-                        else listener.onFail(newsResult.getCode());
+                    public void call(NewsResponse newsResponse) {
+                        if (newsResponse.getCode() == 0)
+                            listener.onSuccess(newsResponse.getData().getArticle());
+                        else listener.onFail(newsResponse.getCode());
                     }
                 });
     }

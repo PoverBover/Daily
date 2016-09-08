@@ -1,7 +1,7 @@
-package com.poverbover.daily.request;
+package com.poverbover.daily.web.request;
 
 import com.poverbover.daily.AppConfig;
-import com.poverbover.daily.model.GirlsResult;
+import com.poverbover.daily.web.response.GirlsResponse;
 
 import retrofit2.http.GET;
 import retrofit2.http.Header;
@@ -14,5 +14,5 @@ import rx.Observable;
 public interface GirlsRequest {
 
     @GET(AppConfig.GIRLS_URL)
-    Observable<GirlsResult>getGirls(@Header("apikey")String key, @Query("id")int id);
+    Observable<GirlsResponse>getGirls(@Header("apikey")String key, @Query("id")int id);
 }

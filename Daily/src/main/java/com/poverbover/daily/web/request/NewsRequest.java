@@ -1,7 +1,7 @@
-package com.poverbover.daily.request;
+package com.poverbover.daily.web.request;
 
 import com.poverbover.daily.AppConfig;
-import com.poverbover.daily.model.NewsResult;
+import com.poverbover.daily.web.response.NewsResponse;
 
 import retrofit2.http.GET;
 import retrofit2.http.Header;
@@ -14,5 +14,5 @@ import rx.Observable;
 public interface NewsRequest {
 
     @GET(AppConfig.NEWS_URL)
-    Observable<NewsResult> getNews(@Header("apikey")String key, @Query("id")String channelId, @Query("page")int page);
+    Observable<NewsResponse> getNews(@Header("apikey")String key, @Query("id")String channelId, @Query("page")int page);
 }

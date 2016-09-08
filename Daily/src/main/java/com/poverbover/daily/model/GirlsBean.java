@@ -2,7 +2,8 @@ package com.poverbover.daily.model;
 
 import com.google.gson.annotations.SerializedName;
 import com.poverbover.daily.AppConfig;
-import com.poverbover.daily.request.GirlsRequest;
+import com.poverbover.daily.web.request.GirlsRequest;
+import com.poverbover.daily.web.response.GirlsResponse;
 
 import java.io.Serializable;
 
@@ -59,9 +60,9 @@ public class GirlsBean implements Serializable{
                 .getGirls(AppConfig.API_KEY,1)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Action1<GirlsResult>() {
+                .subscribe(new Action1<GirlsResponse>() {
                     @Override
-                    public void call(GirlsResult girlsResult) {
+                    public void call(GirlsResponse girlsResponse) {
                         //TODO return result by callback
                     }
                 });

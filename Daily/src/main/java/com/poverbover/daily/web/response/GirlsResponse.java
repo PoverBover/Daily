@@ -1,7 +1,8 @@
-package com.poverbover.daily.model;
+package com.poverbover.daily.web.response;
 
 
 import com.google.gson.annotations.SerializedName;
+import com.poverbover.daily.model.GirlsBean;
 
 import java.io.Serializable;
 import java.util.List;
@@ -9,7 +10,7 @@ import java.util.List;
 /**
  * Created by void on 2016/9/8.
  */
-public class GirlsResult implements Serializable{
+public class GirlsResponse implements Serializable{
 
     private int count;
     private int fcount;
