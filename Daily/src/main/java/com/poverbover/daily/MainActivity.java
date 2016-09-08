@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.poverbover.apputillibrary.ui.base.BaseActivity;
+import com.poverbover.daily.model.GirlsBean;
 import com.poverbover.daily.model.NewsBean;
 
 import java.util.List;
@@ -22,6 +23,7 @@ public class MainActivity extends BaseActivity implements NewsBean.OnNewsListLis
         ButterKnife.bind(this);
 
         NewsBean.getNews(this);
+        GirlsBean.getGirls();
     }
 
     //region NewsBean.OnNewsListListener

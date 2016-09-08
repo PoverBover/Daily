@@ -11,5 +11,5 @@ public class AppConfig {
 
     public static final String BASE_URL ="http://apis.baidu.com/";
     public static final String NEWS_URL="3023/news/channel";
-    public static final String GIRLS_URL="txapi/mvtp/meinv";
+    public static final String GIRLS_URL="tngou/gallery/show";
 }

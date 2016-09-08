@@ -1,7 +1,7 @@
 ###总述
 1. 仿CSDN安卓版
 1. 新闻api：http://apistore.baidu.com/apiworks/servicedetail/2612.html
-1. 美女api：http://apistore.baidu.com/apiworks/servicedetail/720.html
+1. 美女api：http://apistore.baidu.com/apiworks/servicedetail/992.html
 1. 验证码api：http://apistore.baidu.com/astore/serviceinfo/28639.html
 
 ###功能
