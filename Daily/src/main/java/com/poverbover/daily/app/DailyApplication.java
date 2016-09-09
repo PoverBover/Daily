@@ -20,7 +20,6 @@ public class DailyApplication extends Application{
         instance=this;
         AppUtil.init(this, AppConfig.DEBUG);
         Bmob.initialize(this,AppConfig.BMOB_APP_ID);
-        //new UserBmobBean("void","v").save();//创建一个用户
     }
 
     /**获取应用级context*/

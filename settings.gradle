@@ -1,1 +1,1 @@
-include ':Daily', ':AppUtilLibrary'
+include ':Daily', ':AppUtilLibrary', ':UmengLibrary'

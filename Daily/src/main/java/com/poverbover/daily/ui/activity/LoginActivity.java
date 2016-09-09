@@ -56,4 +56,15 @@ public class LoginActivity extends BaseActivity {
             }
         });
     }
+
+    @OnClick(R.id.btn_qq)
+    public void onQQClick(){
+
+    }
+
+    @OnClick(R.id.btn_wechat)
+    public void onWeChatClick(){
+
+//        UMShareAPI.get(this);//找不到UMShareAPI，不知道在那个包
+    }
 }

@@ -18,6 +18,7 @@
         android:layout_height="50dp"
         android:gravity="center_vertical"
         android:hint="username"/>
+
     <EditText
         android:id="@+id/et_password"
         android:layout_width="260dp"
@@ -37,5 +38,17 @@
         android:layout_width="260dp"
         android:layout_height="50dp"
         android:text="regist"/>
+
+    <Button
+        android:id="@+id/btn_qq"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:text="QQ"/>
+
+    <Button
+        android:id="@+id/btn_wechat"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:text="WX"/>
 
 </LinearLayout>
