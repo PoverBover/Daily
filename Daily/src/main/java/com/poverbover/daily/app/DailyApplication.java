@@ -1,4 +1,4 @@
-package com.poverbover.daily;
+package com.poverbover.daily.app;
 
 import android.app.Application;
 import android.content.Context;
@@ -18,7 +18,7 @@ public class DailyApplication extends Application{
     public void onCreate() {
         super.onCreate();
         instance=this;
-        AppUtil.init(this,AppConfig.DEBUG);
+        AppUtil.init(this, AppConfig.DEBUG);
         Bmob.initialize(this,AppConfig.BMOB_APP_ID);
         //new UserBmobBean("void","v").save();//创建一个用户
     }

@@ -1,7 +1,7 @@
 package com.poverbover.daily.model;
 
 import com.google.gson.annotations.SerializedName;
-import com.poverbover.daily.AppConfig;
+import com.poverbover.daily.app.AppConfig;
 import com.poverbover.daily.web.request.GirlsRequest;
 import com.poverbover.daily.web.response.GirlsResponse;
 

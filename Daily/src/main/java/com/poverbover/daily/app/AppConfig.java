@@ -1,4 +1,4 @@
-package com.poverbover.daily;
+package com.poverbover.daily.app;
 
 /**
  * Created by void on 2016/9/6.
