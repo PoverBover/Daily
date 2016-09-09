@@ -18,3 +18,4 @@
 1. 在BaseActivity中增加loadingView，在登录/注册过程中显示并阻止用户操作
 1. 集成友盟
 1. 集成LeakCanary
+1. √签名apk

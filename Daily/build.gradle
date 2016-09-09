@@ -1,21 +1,35 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'daily'
+            keyPassword 'pbdaily'
+            storeFile file('../daily.jks')
+            storePassword 'pbdaily'
+        }
+    }
     compileSdkVersion 23
     buildToolsVersion "24.0.1"
-
     defaultConfig {
         applicationId "com.poverbover.daily"
         minSdkVersion 16
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
+        signingConfig signingConfigs.config
     }
     buildTypes {
         release {
-            minifyEnabled false
+            shrinkResources true//移除无用res（需要minifyEnabled true）
+            minifyEnabled true//混淆
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+    productFlavors {
     }
 }
 
