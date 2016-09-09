@@ -1,6 +1,6 @@
 package com.poverbover.daily.web.request;
 
-import com.poverbover.daily.AppConfig;
+import com.poverbover.daily.app.AppConfig;
 import com.poverbover.daily.web.response.NewsResponse;
 
 import retrofit2.http.GET;

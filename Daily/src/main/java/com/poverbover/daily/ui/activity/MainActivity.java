@@ -1,9 +1,10 @@
-package com.poverbover.daily;
+package com.poverbover.daily.ui.activity;
 
 import android.os.Bundle;
 import android.widget.TextView;
 
 import com.poverbover.apputillibrary.ui.base.BaseActivity;
+import com.poverbover.daily.R;
 import com.poverbover.daily.model.GirlsBean;
 import com.poverbover.daily.model.NewsBean;
 
